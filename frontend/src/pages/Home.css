@@ -1,0 +1,79 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ff6600;
+  color: white;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* --- src/styles/home.css --- */
+.home {
+  padding: 2rem;
+  text-align: center;
+  font-family: sans-serif;
+  background: #fff5ec;
+  min-height: 100vh;
+}
+
+.home h1 {
+  color: #ff6600;
+  font-size: 2.5rem;
+}
+.owner {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 1rem;
+  color: #ff6600
+}
+
+.instructions-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #ffcc99;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+.instructions-box h2 {
+  color: #ff6600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.steps {
+  list-style: none;
+  padding-left: 0;
+}
+
+.steps li {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  color: #ff6600;
+  margin-right: 0.75rem;
+  font-size: 1.5rem;
+}
