@@ -1,29 +1,69 @@
+/* src/pages/Form.css */
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px); /* Adjust based on your Navbar's height */
+  padding: 2rem;
+  background-color: #1e1e2f;
+  color: #e0e0e0;
+}
+
 .form-container {
+  background: #2c2c3a;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 2px solid #f97316; /* Orange accent from the home page */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
   max-width: 400px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.form-container input,
-.form-container button {
-  display: block;
   width: 100%;
+  text-align: center;
+}
+
+.form-container h2 {
+  color: #3b82f6; /* Blue accent from the home page */
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container input {
+  background: #3b3b4a;
+  border: 1px solid #5a5a6a;
+  color: #e0e0e0;
+  padding: 0.75rem;
   margin-bottom: 1rem;
-  padding: 0.5rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form-container input::placeholder {
+  color: #a0a0a0;
+}
+
+.form-container input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
 }
 
 .form-container button {
-  background-color: #ff6600;
-  color: white;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .form-container button:hover {
-  background-color: #ff6600;
+  background: #2563eb;
 }
-

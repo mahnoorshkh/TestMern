@@ -1,63 +1,39 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #ff6600;
-  color: white;
-}
-
-.navbar-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.navbar-links a {
-  margin-left: 1rem;
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.navbar-links a:hover {
-  text-decoration: underline;
-}
-
-/* --- src/styles/home.css --- */
 .home {
   padding: 2rem;
   text-align: center;
-  font-family: sans-serif;
-  background: #fff5ec;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1e1e2f;
   min-height: 100vh;
+  color: #e4e4e7;
 }
 
 .home h1 {
-  color: #ff6600;
+  color: #3b82f6;
   font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
-.owner {
-  font-size: 1.2rem;
-  color: #333;
-  margin-top: 1rem;
-  color: #ff6600
+
+.home p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
 }
 
 .instructions-box {
-  background: white;
+  background: #2c2c3a;
   padding: 2rem;
-  border-radius: 12px;
-  border: 2px solid #ffcc99;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  border: 2px solid #f97316;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
   max-width: 700px;
-  margin: 2rem auto;
+  margin: 2.5rem auto;
   text-align: left;
 }
 
 .instructions-box h2 {
-  color: #ff6600;
+  color: #f97316;
   margin-bottom: 1.5rem;
   text-align: center;
+  font-size: 1.8rem;
 }
 
 .steps {
@@ -69,11 +45,12 @@
   display: flex;
   align-items: center;
   font-size: 1.1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  color: #e0e0e0;
 }
 
 .icon {
-  color: #ff6600;
+  color: #3b82f6;
   margin-right: 0.75rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
