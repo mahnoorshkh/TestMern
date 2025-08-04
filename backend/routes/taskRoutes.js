@@ -10,7 +10,7 @@ const auth = require('../middleware/authMiddleware');
 const router = express.Router();
 
 router.post('/', auth, createTask);
-router.get('/', auth, getTasks);
+router.get('/get', auth, getTasks);
 router.patch('/:id', auth, updateTask);
 router.get('/overdue', auth, getOverdueTasks);
 
