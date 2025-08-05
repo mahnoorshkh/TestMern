@@ -8,7 +8,8 @@ A MERN stack application for managing personal tasks with JWT auth.
 - Frontend: React
 - Backend: Node.js + Express
 - Database: MongoDB
-## Linkn Vercel App: https://your-task-tracker-eight.vercel.app/
+## Link Vercel App: https://your-task-tracker-eight.vercel.app/
+
 
 ## Setup Instructions
 
@@ -18,7 +19,4 @@ cd backend
 cp .env
 npm install
 npm run dev
-## screenshots 
-
-<img width="1292" height="657" alt="image" src="https://github.com/user-attachments/assets/31d675d6-33c4-4038-9bb1-82d96699de1a" />
 
