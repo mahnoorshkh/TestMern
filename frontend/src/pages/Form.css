@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 60px); /* Adjust based on your Navbar's height */
+  min-height: calc(100vh - 60px);
   padding: 2rem;
   background-color: #1e1e2f;
   color: #e0e0e0;
@@ -14,7 +14,7 @@
   background: #2c2c3a;
   padding: 2rem;
   border-radius: 16px;
-  border: 2px solid #f97316; /* Orange accent from the home page */
+  border: 2px solid #f97316;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
   max-width: 400px;
   width: 100%;
@@ -22,7 +22,7 @@
 }
 
 .form-container h2 {
-  color: #3b82f6; /* Blue accent from the home page */
+  color: #3b82f6;
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
 }

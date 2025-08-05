@@ -13,7 +13,7 @@ function Dashboard() {
 
   const fetchTasks = async () => {
     const token = localStorage.getItem("token");
-    if (!token) return; 
+    if (!token) return;
     try {
       const res = await axios.get("http://localhost:5000/tasks/get", {
         headers: { Authorization: `Bearer ${token}` },
@@ -149,9 +149,7 @@ function Dashboard() {
 
               <select
                 value={task.status}
-                onChange={(e) =>
-                  handleStatusChange(task._id, e.target.value)
-                }
+                onChange={(e) => handleStatusChange(task._id, e.target.value)}
                 disabled={!isLoggedIn}
                 style={{
                   backgroundColor: "#3b3b4a",
