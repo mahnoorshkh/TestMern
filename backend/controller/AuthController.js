@@ -19,7 +19,7 @@ exports.signup = async (req, res) => {
     // Create the user
     const user = await UserModel.create({ email, password: hashedPassword });
 
-    res.status(201).json({ message: 'User created' });
+    res.status(201).json({ message: 'User created successfully' });
   } catch (err) {
     res.status(400).json({ error: err.message });
   }
@@ -46,7 +46,7 @@ exports.login = async (req, res) => {
     if (!isMatch) return res.status(400).json({ error: 'Invalid credentials' });
 
     const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
-    res.json({ token });
+    res.json({message: 'Login successful', data: { user, token }});
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
