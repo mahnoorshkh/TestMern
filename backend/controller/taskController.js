@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const taskModel = require('../model/taskModel');
+const { paginate } = require('../helper');
 
 exports.createTask = async (req, res) => {
   try {
@@ -12,12 +13,22 @@ exports.createTask = async (req, res) => {
 
 exports.getTasks = async (req, res) => {
   try {
-    const tasks = await taskModel.find({ userId: req.userId });
-    res.json(tasks);
+    const page = req.query.page || 1;
+    const limit = req.query.limit || 10;
+
+    const { skip, pagination } = await paginate(taskModel, { userId: req.userId }, page, limit);
+
+    const tasks = await taskModel.find({ userId: req.userId })
+      .skip(skip)
+      .limit(pagination.itemsPerPage);
+
+    res.json({ data: tasks, pagination });
+
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 };
+
 
 exports.updateTask = async (req, res) => {
   try {
