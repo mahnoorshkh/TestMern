@@ -12,11 +12,19 @@ A MERN stack application for managing personal tasks with JWT auth.
 
 
 ## Setup Instructions
-
 ### Backend
 ```bash
 cd backend
 cp .env
 npm install
 npm run dev
+
+
+## Frontend
+```bash
+cd frontend
+npm install
+npm start
+
+
 
